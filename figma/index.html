@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipur Tourism Site</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="top">
+        <div class="welcome">
+            <h2>" A Jewel Land and Switzerland of India "</h2>
+            <h4>Call Manipur</h4>
+        </div>
+        <nav id="flex-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  id="drop_color" style="color:white;">
+                          Category
+                        </a>
+                        <ul class="dropdown-menu" id="display">
+                          <li><a class="dropdown-item" href="#">Waterfall</a></li>
+                          <li><a class="dropdown-item" href="#">Lake</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Caves</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Map</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Place to Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Call Taxi</a>
+                      </li>
+                      
+                    </ul>
+                    <div class="users">
+                        <div class="icons">
+                            <div class="image">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                      </svg>
+                                </button>
+                            </div>
+                            <div class="image">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                                      </svg>
+                                </button>
+                            </div>
+                            <div class="image">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                      </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <div class="new-users">
+                <div class="icons">
+                    <div class="image">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="image">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="image">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <section id="Carousel">
+        <div class="slider">
+            <span style="--i:1;">
+                <img src="./Images/Tamenglong/Barak Water Fall/Image1.jpg" alt="">
+            </span>
+            <span style="--i:2;">
+                <img src="./Images/Tamenglong/Bunning/Image1.jpg" alt="">
+            </span>
+            <span style="--i:3;">
+                <img src="./Images/Tamenglong/Tharon Cave/Image1.jpg" alt="">
+            </span>
+            <span style="--i:4;">
+                <img src="./Images/Tamenglong/Zeilad/Image1.jpg" alt="">
+            </span>
+            <span style="--i:5;">
+                <img src="./hundung mangva cave/below-the-cave-there.jpg" alt="">
+            </span>
+            <span style="--i:6;">
+                <img src="./kangla/img-20200307-115836-largejpg.jpg" alt="">
+            </span>
+            <span style="--i:7;">
+                <img src="./Loktak/loktak up view.jpg" alt="">
+            </span>
+            <span style="--i:8;">
+                <img src="./Imphal War cemetry/imphal-war-cemetery.jpg" alt="">
+            </span>
+        </div>
+    </section>
+    <section id="categories">
+        <div class="head">
+            <div class="title">
+                <h3>Popular in Manipur</h3>
+            </div>
+            <div class="more">
+                <a href="#">..See More</a>
+            </div>
+        </div>
+    </section>
+    <aside id="places">
+        <div class="boxes">
+            <!-- box1 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./Loktak/loktak up view.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes1" id="likes">
+                                <input type="radio" name="likes1" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour1" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="title">
+                        <div class="head">
+                            <h4>Loktak Lake</h4>
+                        </div>
+                        <div class="container">
+                            <div class="rating">
+                                <input type="radio" name="star" id="star5"
+                               style="color: #ff9933">
+                                <input type="radio" name="star" id="star4"style="color: #ff9933">
+                                <input type="radio" name="star" id="star3"style="color: #ff9933">
+                                <input type="radio" name="star" id="star2"style="color: #ff9933">
+                                <input type="radio" name="star" id="star1"
+                                style="color:#ff9933">
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Loktak Lake is a freshwater lake in North-East India. It is the largest freshwater lake in South Asia. The lake is located at Moirang in Manipur State Inida. it is Pulsating with surface... <a href="#" style="text-decoration: none; margin-left:190px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- box2 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./Barak/BARAK-WATERFALLS-500x300.png" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes2" id="likes2">
+                                <input type="radio" name="likes2" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour2" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="title">
+                        <div class="head">
+                            <h4>Barak Fall</h4>
+                        </div>
+                        <div class="container">
+                            <div class="rating">
+                                <input type="radio" name="second-star" id="star5"
+                               style="color: #ff9933">
+                                <input type="radio" name="second-star" id="star4"style="color: #ff9933">
+                                <input type="radio" name="second-star" id="star3"style="color: #ff9933">
+                                <input type="radio" name="second-star" id="star2"style="color: #ff9933">
+                                <input type="radio" name="second-star" id="star1"
+                                style="color:#ff9933">
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Barak Waterfalls is another gem of Manipur, visited by many tourists throughout the year. The waterfall is situated deep within the forests, where the soft gurgling sound of flowing ... <a href="#" style="text-decoration: none; margin-left:180px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- box3 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./buning/ef6187ca-ba14-450a-9e61-c8880df39011.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes3" id="likes3">
+                                <input type="radio" name="likes3" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour3" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Bunning Meadow</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="star" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="third-star" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="third-star" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="third-star" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="third-star" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Being a paradise for nature lovers, the Bunning Meadow is a place coloured with beautiful lilies and orchids all over making the place even more beautiful. Visiting the place tourists... <a href="#" style="text-decoration: none; margin-left:185px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- box4 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./Geljang resort/maxresdefault.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes4" id="likes4">
+                                <input type="radio" name="likes4" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour4" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Geljang Resort</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="fourth-star" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="fourth-star" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="fourth-star" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="fourth-star" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="fourth-star" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Geljang Resort, a resort in Manipur, is a well known resort located in Geljang Village in Churachandpur District in Manipur. It is one of the leading and most loved resorts in the state.  ... <a href="#" style="text-decoration: none; margin-left:190px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box5 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./Imphal War cemetry/holy-cross-inside-imphal.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes5" id="likes5">
+                                <input type="radio" name="likes5" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour5" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>War Cemetry</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="fifth-star" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="fifth-star" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="fifth-star" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="fifth-star" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="fifth-star" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>The Imphal War Cemetery is located in Imphal, the capital of the Indian state of Manipur, in Northeast India, which has an international border with upper Burma (now Myanmar... <a href="#" style="text-decoration: none; margin-left:170px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box6 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./shirui hill/1500282250658-Shirui-Kashung.webp" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes6" id="likes6">
+                                <input type="radio" name="likes6" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour6" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Shirui Hill</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="sixth-star" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="sixth-star" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="sixth-star" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="sixth-star" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="sixth-star" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>The more popularly know peak is the Shirui Kashung Peak – 2835 m from the sea level. Most of the major rivers originate from the crevices and slopes of this Shirui Peak. Shirui is 18 km... <a href="#" style="text-decoration: none; margin-left:180px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end of boxes -->
+        </div>
+    </aside>
+    <section id="categories">
+        <div class="head">
+            <div class="title">
+                <h3>Toursit Sites</h3>
+            </div>
+            <div class="more">
+                <a href="#">..See More</a>
+            </div>
+        </div>
+    </section>
+    <aside id="places">
+        <div class="boxes">
+            <!-- box1 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./dailong ranggaan/5d30378d54656206ccb78733_1563441037104.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes7" id="likes7">
+                                <input type="radio" name="likes7" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour7" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="title">
+                        <div class="head">
+                            <h4>Dailong Raengan</h4>
+                        </div>
+                        <div class="container">
+                            <div class="rating">
+                                <input type="radio" name="more_sites_star" id="star5"
+                               style="color: #ff9933">
+                                <input type="radio" name="more_sites_star" id="star4"style="color: #ff9933">
+                                <input type="radio" name="more_sites_star" id="star3"style="color: #ff9933">
+                                <input type="radio" name="more_sites_star" id="star2"style="color: #ff9933">
+                                <input type="radio" name="more_sites_star" id="star1"
+                                style="color:#ff9933">
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p> Ecotourism Hut at Dailong 'Raengaan' in Tamenglong district.
+                            The eco-tourism centre also known as ‘Nature Tourism’ is a beautifully crafted idea to unite conservation, communities... <a href="#" style="text-decoration: none; margin-left:140px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- box2 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./hundung mangva cave/below-the-cave-there.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes8" id="likes8">
+                                <input type="radio" name="likes8" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour8" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="title">
+                        <div class="head">
+                            <h4>Hundung Cave</h4>
+                        </div>
+                        <div class="container">
+                            <div class="rating">
+                                <input type="radio" name="more_sites_star2" id="star5"
+                               style="color: #ff9933">
+                                <input type="radio" name="more_sites_star2" id="star4"style="color: #ff9933">
+                                <input type="radio" name="more_sites_star2" id="star3"style="color: #ff9933">
+                                <input type="radio" name="more_sites_star2" id="star2"style="color: #ff9933">
+                                <input type="radio" name="more_sites_star2" id="star1"
+                                style="color:#ff9933">
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>The Mova cave is a limestone cave which can be reached after a detour before reaching Ukhrul. It is situated near the now-defunct cement factoryand Lungshang Kong/river in a small ... <a href="#" style="text-decoration: none; margin-left:190px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- box3 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./kangla/img-20190525-104625-largejpg.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes9" id="likes9">
+                                <input type="radio" name="likes9" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour9" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Kangla Fort</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="more_sites_star3" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star3" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star3" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star3" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star3" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>The fort was the tradition seat of the kingly governance that was there from the rule of the legendary God-king Nongda Lairen Pakhangba in 33A.D to Maharaj Kulachandra in 1891 A.D.... <a href="#" style="text-decoration: none; margin-left:150px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./zeilatzang/Tamenglongs_Zeilad_forest_degrading_gradually_as_government_delays_declara_ZBpclT5.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes10" id="likes10">
+                                <input type="radio" name="likes10" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour10" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Zeilad Lake</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="more_sites_star4" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star4" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star4" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star4" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star4" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>The Tamenglong district of Manipur has the most number of lakes. In fact, it is the only area of the state. Zeilad Lake is one of the many lakes in Tamenglong and the most famous one too..... <a href="#" style="text-decoration: none; margin-left:110px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src=".//keibul lamjao national park/Keibul-Lamjao-National-Park-Manipur-Loktak-Lake-Sangai-28-of-29-689x517.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes11" id="likes11">
+                                <input type="radio" name="likes11" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour11" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Keibul Lamjao</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="more_sites_star5" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star5" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star5" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star5" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star5" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>The Keibul Lamjao National Park (Meitei: Keibul Lamjao Leipakki Lampak) is a national park in the Bishnupur district of the state of Manipur in India. It is 40 km (15.4 sq mi) in area, the only.... <a href="#" style="text-decoration: none; margin-left:140px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./tharon cave/Tharon_Cave_Explore_the_less_exploredTharon_Cave_Explore_the_less_explored_LpTZ9of.jpg" alt="">
+                    <div class="icons">
+                        <div class="rate-likes">
+                            <div class="rate-flex">
+                                <input type="radio" name="likes12" id="likes12">
+                                <input type="radio" name="likes12" id="dislikes" style="transform: rotate(180deg); margin:5px 0 0-20px;">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg></a>
+                        </div>
+                        <div class="favourite">
+                            <input type="radio" name="favour12" id="favours">
+                        </div>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div class="description">
+                        <div class="title">
+                            <div class="head">
+                                <h4>Tharon Cave</h4>
+                            </div>
+                            <div class="container">
+                                <div class="rating">
+                                    <input type="radio" name="more_sites_star6" id="star5"
+                                   style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star6" id="star4"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star6" id="star3"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star6" id="star2"style="color: #ff9933">
+                                    <input type="radio" name="more_sites_star6" id="star1"
+                                    style="color:#ff9933">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Located at a distance of approx 27 km from Tamenglong, the Tharon Cave which is also spelled as the Thaeuluan Cave is a 655.6 m long cave with five exits and 34 joints. On visiting the cave.... <a href="#" style="text-decoration: none; margin-left:120px;">..see more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section id="categories">
+        <div class="head" style="display:flex; justify-content:center;">
+            <div class="title">
+                <a href="#top" style="color:var(--font-color);text-decoration:none;"><h3>Back to Top</h3></a>
+            </div>
+            <!-- <div class="more">
+                <a href="#">..See More</a>
+            </div> -->
+        </div>
+    </section>
+    <footer style="background:var(--background-color); height:50vh;">
+        <div class="columns">
+            <div class="about_us">
+                <h5>About Us</h5>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Terms and Services</a>
+                </li>
+                <li>
+                    <a href="#">Cookies Policy</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+            </div>
+            <div class="follow_us">
+                <h5>Follow Us</h5>
+                <div class="social_icons">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg></a>
+
+
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg></a>
+
+
+
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                      </a>
+                </div>
+                <br>
+                <h6>Call Us</h6>
+                <p><a href="tel:7982239573" style="margin-left:20px; color:var(--font-color);text-decoration:none;">+91 - 7982239573</a></p>
+            </div>
+            <div class="contact">
+                <div class="flex-form">
+                    <form>
+                        <div class="mb-3">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" accept="a-z,@,.">
+                        </div>
+                        <div class="mb-3">
+                          <button type="submit" class="btn btn-danger">Subscribe</button>
+                        </div>
+                        <div class="more-flex">
+                            <textarea name="" id="" cols="20" rows="2"></textarea>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="./index.js">
+
+</script>
+</html>
